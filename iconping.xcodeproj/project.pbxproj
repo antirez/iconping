@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B6869BA013DD8DDE00F2D69B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6869B9F13DD8DDE00F2D69B /* Cocoa.framework */; };
+		B6869BAA13DD8DDE00F2D69B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6869BA813DD8DDE00F2D69B /* InfoPlist.strings */; };
+		B6869BAC13DD8DDE00F2D69B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6869BAB13DD8DDE00F2D69B /* main.m */; };
+		B6869BB013DD8DDE00F2D69B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B6869BAE13DD8DDE00F2D69B /* Credits.rtf */; };
+		B6869BB313DD8DDE00F2D69B /* iconpingAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6869BB213DD8DDE00F2D69B /* iconpingAppDelegate.m */; };
+		B6869BB613DD8DDE00F2D69B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6869BB413DD8DDE00F2D69B /* MainMenu.xib */; };
+		B6869BBD13DDA3D900F2D69B /* iconok.png in Resources */ = {isa = PBXBuildFile; fileRef = B6869BBC13DDA3D900F2D69B /* iconok.png */; };
+		B6869BBF13DDAEA600F2D69B /* iconko.png in Resources */ = {isa = PBXBuildFile; fileRef = B6869BBE13DDAEA600F2D69B /* iconko.png */; };
+		B6869BC113DDAEB500F2D69B /* iconslow.png in Resources */ = {isa = PBXBuildFile; fileRef = B6869BC013DDAEB500F2D69B /* iconslow.png */; };
+		B688E44813ED7C7A00D58F00 /* world_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B688E44713ED7C7A00D58F00 /* world_icon.png */; };
+		B688E44B13ED874400D58F00 /* world_icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = B688E44A13ED874400D58F00 /* world_icon.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B6869B9B13DD8DDE00F2D69B /* iconping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iconping.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6869B9F13DD8DDE00F2D69B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B6869BA213DD8DDE00F2D69B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B6869BA313DD8DDE00F2D69B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B6869BA413DD8DDE00F2D69B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B6869BA713DD8DDE00F2D69B /* iconping-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iconping-Info.plist"; sourceTree = "<group>"; };
+		B6869BA913DD8DDE00F2D69B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B6869BAB13DD8DDE00F2D69B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6869BAD13DD8DDE00F2D69B /* iconping-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iconping-Prefix.pch"; sourceTree = "<group>"; };
+		B6869BAF13DD8DDE00F2D69B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		B6869BB113DD8DDE00F2D69B /* iconpingAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iconpingAppDelegate.h; sourceTree = "<group>"; };
+		B6869BB213DD8DDE00F2D69B /* iconpingAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iconpingAppDelegate.m; sourceTree = "<group>"; };
+		B6869BB513DD8DDE00F2D69B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B6869BBC13DDA3D900F2D69B /* iconok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconok.png; sourceTree = "<group>"; };
+		B6869BBE13DDAEA600F2D69B /* iconko.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconko.png; sourceTree = "<group>"; };
+		B6869BC013DDAEB500F2D69B /* iconslow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconslow.png; sourceTree = "<group>"; };
+		B688E44713ED7C7A00D58F00 /* world_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = world_icon.png; sourceTree = "<group>"; };
+		B688E44A13ED874400D58F00 /* world_icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = world_icon.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6869B9813DD8DDE00F2D69B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6869BA013DD8DDE00F2D69B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6869B9013DD8DDD00F2D69B = {
+			isa = PBXGroup;
+			children = (
+				B688E44A13ED874400D58F00 /* world_icon.icns */,
+				B688E44713ED7C7A00D58F00 /* world_icon.png */,
+				B6869BA513DD8DDE00F2D69B /* iconping */,
+				B6869B9E13DD8DDE00F2D69B /* Frameworks */,
+				B6869B9C13DD8DDE00F2D69B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B6869B9C13DD8DDE00F2D69B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6869B9B13DD8DDE00F2D69B /* iconping.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6869B9E13DD8DDE00F2D69B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6869B9F13DD8DDE00F2D69B /* Cocoa.framework */,
+				B6869BA113DD8DDE00F2D69B /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6869BA113DD8DDE00F2D69B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6869BA213DD8DDE00F2D69B /* AppKit.framework */,
+				B6869BA313DD8DDE00F2D69B /* CoreData.framework */,
+				B6869BA413DD8DDE00F2D69B /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B6869BA513DD8DDE00F2D69B /* iconping */ = {
+			isa = PBXGroup;
+			children = (
+				B6869BB113DD8DDE00F2D69B /* iconpingAppDelegate.h */,
+				B6869BB213DD8DDE00F2D69B /* iconpingAppDelegate.m */,
+				B6869BB413DD8DDE00F2D69B /* MainMenu.xib */,
+				B6869BA613DD8DDE00F2D69B /* Supporting Files */,
+			);
+			path = iconping;
+			sourceTree = "<group>";
+		};
+		B6869BA613DD8DDE00F2D69B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6869BC013DDAEB500F2D69B /* iconslow.png */,
+				B6869BBE13DDAEA600F2D69B /* iconko.png */,
+				B6869BBC13DDA3D900F2D69B /* iconok.png */,
+				B6869BA713DD8DDE00F2D69B /* iconping-Info.plist */,
+				B6869BA813DD8DDE00F2D69B /* InfoPlist.strings */,
+				B6869BAB13DD8DDE00F2D69B /* main.m */,
+				B6869BAD13DD8DDE00F2D69B /* iconping-Prefix.pch */,
+				B6869BAE13DD8DDE00F2D69B /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6869B9A13DD8DDE00F2D69B /* iconping */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6869BB913DD8DDE00F2D69B /* Build configuration list for PBXNativeTarget "iconping" */;
+			buildPhases = (
+				B6869B9713DD8DDE00F2D69B /* Sources */,
+				B6869B9813DD8DDE00F2D69B /* Frameworks */,
+				B6869B9913DD8DDE00F2D69B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iconping;
+			productName = iconping;
+			productReference = B6869B9B13DD8DDE00F2D69B /* iconping.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6869B9213DD8DDD00F2D69B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0410;
+				ORGANIZATIONNAME = "Kiurma s.r.l. / Merzia s.r.l.";
+			};
+			buildConfigurationList = B6869B9513DD8DDD00F2D69B /* Build configuration list for PBXProject "iconping" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B6869B9013DD8DDD00F2D69B;
+			productRefGroup = B6869B9C13DD8DDE00F2D69B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6869B9A13DD8DDE00F2D69B /* iconping */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6869B9913DD8DDE00F2D69B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6869BAA13DD8DDE00F2D69B /* InfoPlist.strings in Resources */,
+				B6869BB013DD8DDE00F2D69B /* Credits.rtf in Resources */,
+				B6869BB613DD8DDE00F2D69B /* MainMenu.xib in Resources */,
+				B6869BBD13DDA3D900F2D69B /* iconok.png in Resources */,
+				B6869BBF13DDAEA600F2D69B /* iconko.png in Resources */,
+				B6869BC113DDAEB500F2D69B /* iconslow.png in Resources */,
+				B688E44813ED7C7A00D58F00 /* world_icon.png in Resources */,
+				B688E44B13ED874400D58F00 /* world_icon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6869B9713DD8DDE00F2D69B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6869BAC13DD8DDE00F2D69B /* main.m in Sources */,
+				B6869BB313DD8DDE00F2D69B /* iconpingAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B6869BA813DD8DDE00F2D69B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6869BA913DD8DDE00F2D69B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B6869BAE13DD8DDE00F2D69B /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6869BAF13DD8DDE00F2D69B /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		B6869BB413DD8DDE00F2D69B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6869BB513DD8DDE00F2D69B /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6869BB713DD8DDE00F2D69B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B6869BB813DD8DDE00F2D69B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B6869BBA13DD8DDE00F2D69B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iconping/iconping-Prefix.pch";
+				INFOPLIST_FILE = "iconping/iconping-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B6869BBB13DD8DDE00F2D69B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iconping/iconping-Prefix.pch";
+				INFOPLIST_FILE = "iconping/iconping-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6869B9513DD8DDD00F2D69B /* Build configuration list for PBXProject "iconping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6869BB713DD8DDE00F2D69B /* Debug */,
+				B6869BB813DD8DDE00F2D69B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6869BB913DD8DDE00F2D69B /* Build configuration list for PBXNativeTarget "iconping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6869BBA13DD8DDE00F2D69B /* Debug */,
+				B6869BBB13DD8DDE00F2D69B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6869B9213DD8DDD00F2D69B /* Project object */;
+}

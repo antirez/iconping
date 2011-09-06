@@ -134,10 +134,10 @@ int64_t ustime(void) {
     int icmpoff;
     
     if (nread <= 0) return;
-    NSLog(@"Received ICMP %d bytes\n", (int)nread);
+    DLog(@"Received ICMP %d bytes\n", (int)nread);
     
     icmpoff = (packet[0]&0x0f)*4;
-    NSLog(@"ICMP offset: %d\n", icmpoff);
+    DLog(@"ICMP offset: %d\n", icmpoff);
     
     /* Don't process malformed packets. */
     if (nread < (icmpoff + (signed)sizeof(struct ICMPHeader))) return;
@@ -150,7 +150,7 @@ int64_t ustime(void) {
         return;
     }
     
-    NSLog(@"OK received an ICMP packet that matches!\n");
+    DLog(@"OK received an ICMP packet that matches!\n");
     if (reply->sentTime > last_received_time) {
         last_rtt = (int)(ustime()-reply->sentTime)/1000;
         last_received_time = reply->sentTime;
@@ -209,7 +209,7 @@ int64_t ustime(void) {
     
     clicks++;
     if ((clicks % 10) == 0) {
-        NSLog(@"Sending ping\n");
+        DLog(@"Sending ping\n");
         
         [self sendPingwithId:icmp_id andSeq: icmp_seq];
     }
@@ -322,7 +322,7 @@ int64_t ustime(void) {
 	// We're going to grab the contents of the shared file list (LSSharedFileListItemRef objects)
 	// and pop it in an array so we can iterate through it to find our item.
 	CFArrayRef loginItemsArray = LSSharedFileListCopySnapshot(theLoginItemsRefs, &seedValue);
-	for (id item in (NSArray *)loginItemsArray) {    
+	for (id item in (NSArray *)loginItemsArray) {     
 		LSSharedFileListItemRef itemRef = (LSSharedFileListItemRef)item;
 		if (LSSharedFileListItemResolve(itemRef, 0, (CFURLRef*) &thePath, NULL) == noErr) {
 			if ([[(NSURL *)thePath path] hasPrefix:appPath]) {

@@ -171,8 +171,8 @@ int64_t ustime(void) {
     [[NSRunLoop mainRunLoop] addTimer:[NSTimer timerWithTimeInterval:0.1 invocation:invocation repeats:YES] forMode:NSRunLoopCommonModes];
 
     myMenu = [[NSMenu alloc] initWithTitle:@"Menu Title"];
-    NSMenuItem *menuItem = [[NSMenuItem alloc] initWithTitle:@"Quit Icon Ping" action:@selector(exitAction) keyEquivalent:@"q"];
-    [menuItem setEnabled:YES];
+    quitMenuItem = [[NSMenuItem alloc] initWithTitle:@"Quit Icon Ping" action:@selector(exitAction) keyEquivalent:@"q"];
+    [quitMenuItem setEnabled:YES];
   
     statusMenuItem = [[NSMenuItem alloc] initWithTitle:@"..." action:nil keyEquivalent:@""];
     [statusMenuItem setEnabled:NO];
@@ -183,7 +183,7 @@ int64_t ustime(void) {
     
     [myMenu addItem: statusMenuItem];
     [myMenu addItem: openAtStartupMenuItem];
-    [myMenu addItem: menuItem];
+    [myMenu addItem: quitMenuItem];
 
     myStatusItem = [[[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength] retain];
     
@@ -355,7 +355,7 @@ int64_t ustime(void) {
 
 - (BOOL)toggleLoginItem {
 	NSString * appPath = [[NSBundle mainBundle] bundlePath];
-    BOOL retval;
+    BOOL retval = NO;
 	
 	// Create a reference to the shared file list.
 	LSSharedFileListRef loginItems = LSSharedFileListCreate(NULL, kLSSharedFileListSessionLoginItems, NULL);
@@ -367,8 +367,8 @@ int64_t ustime(void) {
 			[self disableLoginItemWithLoginItemsReference:loginItems ForPath:appPath];
             retval = NO;
         }
+        CFRelease(loginItems);
 	}
-	CFRelease(loginItems);
     return retval;
 }
 

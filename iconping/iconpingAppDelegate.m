@@ -108,7 +108,7 @@ int64_t ustime(void) {
     struct ICMPHeader icmp;
     
     if (s == -1) return;
-    inet_aton("4.2.2.2", &sa.sin_addr);
+    inet_aton("8.8.8.8", &sa.sin_addr);
     setSocketNonBlocking(s);
     
     /* Note that we create always a new socket, with a different identifier
@@ -306,8 +306,6 @@ int64_t ustime(void) {
 			if ([[(NSURL *)thePath path] hasPrefix:appPath]) {
 				LSSharedFileListItemRemove(theLoginItemsRefs, itemRef); // Deleting the item
 			}
-			// Docs for LSSharedFileListItemResolve say we're responsible
-			// for releasing the CFURLRef that is returned
 			CFRelease(thePath);
 		}		
 	}
@@ -327,12 +325,12 @@ int64_t ustime(void) {
 		if (LSSharedFileListItemResolve(itemRef, 0, (CFURLRef*) &thePath, NULL) == noErr) {
 			if ([[(NSURL *)thePath path] hasPrefix:appPath]) {
 				found = YES;
+                CFRelease(thePath);
 				break;
-			}
+			} else {
+                CFRelease(thePath);
+            }
 		}
-		// Docs for LSSharedFileListItemResolve say we're responsible
-		// for releasing the CFURLRef that is returned
-		CFRelease(thePath);
 	}
 	CFRelease(loginItemsArray);
 	

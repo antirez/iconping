@@ -7,20 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		839211691C8F8069002B802F /* ping_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 839211681C8F8069002B802F /* ping_1@2x.png */; };
+		839211731C8F8516002B802F /* ping_8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8392116A1C8F8516002B802F /* ping_8@2x.png */; };
+		839211741C8F8516002B802F /* ping_7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8392116B1C8F8516002B802F /* ping_7@2x.png */; };
+		839211751C8F8516002B802F /* ping_6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8392116C1C8F8516002B802F /* ping_6@2x.png */; };
+		839211761C8F8516002B802F /* ping_5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8392116D1C8F8516002B802F /* ping_5@2x.png */; };
+		839211771C8F8516002B802F /* ping_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8392116E1C8F8516002B802F /* ping_4@2x.png */; };
+		839211781C8F8516002B802F /* ping_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8392116F1C8F8516002B802F /* ping_3@2x.png */; };
+		839211791C8F8516002B802F /* ping_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 839211701C8F8516002B802F /* ping_2@2x.png */; };
+		8392117A1C8F8516002B802F /* ping_9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 839211711C8F8516002B802F /* ping_9@2x.png */; };
+		8392117B1C8F8516002B802F /* ping_error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 839211721C8F8516002B802F /* ping_error@2x.png */; };
+		83E571CE1C8E4ECB00891AFE /* ping_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 83E571C41C8E4ECB00891AFE /* ping_1.png */; };
+		83E571CF1C8E4ECB00891AFE /* ping_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 83E571C51C8E4ECB00891AFE /* ping_2.png */; };
+		83E571D01C8E4ECB00891AFE /* ping_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 83E571C61C8E4ECB00891AFE /* ping_3.png */; };
+		83E571D11C8E4ECB00891AFE /* ping_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 83E571C71C8E4ECB00891AFE /* ping_4.png */; };
+		83E571D21C8E4ECB00891AFE /* ping_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 83E571C81C8E4ECB00891AFE /* ping_5.png */; };
+		83E571D31C8E4ECB00891AFE /* ping_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 83E571C91C8E4ECB00891AFE /* ping_6.png */; };
+		83E571D41C8E4ECB00891AFE /* ping_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 83E571CA1C8E4ECB00891AFE /* ping_7.png */; };
+		83E571D51C8E4ECB00891AFE /* ping_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 83E571CB1C8E4ECB00891AFE /* ping_8.png */; };
+		83E571D61C8E4ECB00891AFE /* ping_9.png in Resources */ = {isa = PBXBuildFile; fileRef = 83E571CC1C8E4ECB00891AFE /* ping_9.png */; };
+		83E571D71C8E4ECB00891AFE /* ping_error.png in Resources */ = {isa = PBXBuildFile; fileRef = 83E571CD1C8E4ECB00891AFE /* ping_error.png */; };
 		B6869BA013DD8DDE00F2D69B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6869B9F13DD8DDE00F2D69B /* Cocoa.framework */; };
 		B6869BAA13DD8DDE00F2D69B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6869BA813DD8DDE00F2D69B /* InfoPlist.strings */; };
 		B6869BAC13DD8DDE00F2D69B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6869BAB13DD8DDE00F2D69B /* main.m */; };
 		B6869BB013DD8DDE00F2D69B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B6869BAE13DD8DDE00F2D69B /* Credits.rtf */; };
 		B6869BB313DD8DDE00F2D69B /* iconpingAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6869BB213DD8DDE00F2D69B /* iconpingAppDelegate.m */; };
 		B6869BB613DD8DDE00F2D69B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6869BB413DD8DDE00F2D69B /* MainMenu.xib */; };
-		B6869BBD13DDA3D900F2D69B /* iconok.png in Resources */ = {isa = PBXBuildFile; fileRef = B6869BBC13DDA3D900F2D69B /* iconok.png */; };
-		B6869BBF13DDAEA600F2D69B /* iconko.png in Resources */ = {isa = PBXBuildFile; fileRef = B6869BBE13DDAEA600F2D69B /* iconko.png */; };
 		B6869BC113DDAEB500F2D69B /* iconslow.png in Resources */ = {isa = PBXBuildFile; fileRef = B6869BC013DDAEB500F2D69B /* iconslow.png */; };
 		B688E44813ED7C7A00D58F00 /* world_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B688E44713ED7C7A00D58F00 /* world_icon.png */; };
 		B688E44B13ED874400D58F00 /* world_icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = B688E44A13ED874400D58F00 /* world_icon.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		839211681C8F8069002B802F /* ping_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ping_1@2x.png"; sourceTree = "<group>"; };
+		8392116A1C8F8516002B802F /* ping_8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ping_8@2x.png"; sourceTree = "<group>"; };
+		8392116B1C8F8516002B802F /* ping_7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ping_7@2x.png"; sourceTree = "<group>"; };
+		8392116C1C8F8516002B802F /* ping_6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ping_6@2x.png"; sourceTree = "<group>"; };
+		8392116D1C8F8516002B802F /* ping_5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ping_5@2x.png"; sourceTree = "<group>"; };
+		8392116E1C8F8516002B802F /* ping_4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ping_4@2x.png"; sourceTree = "<group>"; };
+		8392116F1C8F8516002B802F /* ping_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ping_3@2x.png"; sourceTree = "<group>"; };
+		839211701C8F8516002B802F /* ping_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ping_2@2x.png"; sourceTree = "<group>"; };
+		839211711C8F8516002B802F /* ping_9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ping_9@2x.png"; sourceTree = "<group>"; };
+		839211721C8F8516002B802F /* ping_error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ping_error@2x.png"; sourceTree = "<group>"; };
+		83E571C41C8E4ECB00891AFE /* ping_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ping_1.png; sourceTree = "<group>"; };
+		83E571C51C8E4ECB00891AFE /* ping_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ping_2.png; sourceTree = "<group>"; };
+		83E571C61C8E4ECB00891AFE /* ping_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ping_3.png; sourceTree = "<group>"; };
+		83E571C71C8E4ECB00891AFE /* ping_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ping_4.png; sourceTree = "<group>"; };
+		83E571C81C8E4ECB00891AFE /* ping_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ping_5.png; sourceTree = "<group>"; };
+		83E571C91C8E4ECB00891AFE /* ping_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ping_6.png; sourceTree = "<group>"; };
+		83E571CA1C8E4ECB00891AFE /* ping_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ping_7.png; sourceTree = "<group>"; };
+		83E571CB1C8E4ECB00891AFE /* ping_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ping_8.png; sourceTree = "<group>"; };
+		83E571CC1C8E4ECB00891AFE /* ping_9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ping_9.png; sourceTree = "<group>"; };
+		83E571CD1C8E4ECB00891AFE /* ping_error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ping_error.png; sourceTree = "<group>"; };
 		B6869B9B13DD8DDE00F2D69B /* iconping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iconping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6869B9F13DD8DDE00F2D69B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		B6869BA213DD8DDE00F2D69B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -34,8 +72,6 @@
 		B6869BB113DD8DDE00F2D69B /* iconpingAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iconpingAppDelegate.h; sourceTree = "<group>"; };
 		B6869BB213DD8DDE00F2D69B /* iconpingAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iconpingAppDelegate.m; sourceTree = "<group>"; };
 		B6869BB513DD8DDE00F2D69B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		B6869BBC13DDA3D900F2D69B /* iconok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconok.png; sourceTree = "<group>"; };
-		B6869BBE13DDAEA600F2D69B /* iconko.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconko.png; sourceTree = "<group>"; };
 		B6869BC013DDAEB500F2D69B /* iconslow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconslow.png; sourceTree = "<group>"; };
 		B688E44713ED7C7A00D58F00 /* world_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = world_icon.png; sourceTree = "<group>"; };
 		B688E44A13ED874400D58F00 /* world_icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = world_icon.icns; sourceTree = "<group>"; };
@@ -105,9 +141,27 @@
 		B6869BA613DD8DDE00F2D69B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8392116A1C8F8516002B802F /* ping_8@2x.png */,
+				8392116B1C8F8516002B802F /* ping_7@2x.png */,
+				8392116C1C8F8516002B802F /* ping_6@2x.png */,
+				8392116D1C8F8516002B802F /* ping_5@2x.png */,
+				8392116E1C8F8516002B802F /* ping_4@2x.png */,
+				8392116F1C8F8516002B802F /* ping_3@2x.png */,
+				839211701C8F8516002B802F /* ping_2@2x.png */,
+				839211711C8F8516002B802F /* ping_9@2x.png */,
+				839211721C8F8516002B802F /* ping_error@2x.png */,
+				839211681C8F8069002B802F /* ping_1@2x.png */,
+				83E571C41C8E4ECB00891AFE /* ping_1.png */,
+				83E571C51C8E4ECB00891AFE /* ping_2.png */,
+				83E571C61C8E4ECB00891AFE /* ping_3.png */,
+				83E571C71C8E4ECB00891AFE /* ping_4.png */,
+				83E571C81C8E4ECB00891AFE /* ping_5.png */,
+				83E571C91C8E4ECB00891AFE /* ping_6.png */,
+				83E571CA1C8E4ECB00891AFE /* ping_7.png */,
+				83E571CB1C8E4ECB00891AFE /* ping_8.png */,
+				83E571CC1C8E4ECB00891AFE /* ping_9.png */,
+				83E571CD1C8E4ECB00891AFE /* ping_error.png */,
 				B6869BC013DDAEB500F2D69B /* iconslow.png */,
-				B6869BBE13DDAEA600F2D69B /* iconko.png */,
-				B6869BBC13DDA3D900F2D69B /* iconok.png */,
 				B6869BA713DD8DDE00F2D69B /* iconping-Info.plist */,
 				B6869BA813DD8DDE00F2D69B /* InfoPlist.strings */,
 				B6869BAB13DD8DDE00F2D69B /* main.m */,
@@ -143,7 +197,7 @@
 		B6869B9213DD8DDD00F2D69B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0410;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Kiurma s.r.l. / Merzia s.r.l.";
 			};
 			buildConfigurationList = B6869B9513DD8DDD00F2D69B /* Build configuration list for PBXProject "iconping" */;
@@ -168,13 +222,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839211761C8F8516002B802F /* ping_5@2x.png in Resources */,
+				8392117A1C8F8516002B802F /* ping_9@2x.png in Resources */,
+				839211691C8F8069002B802F /* ping_1@2x.png in Resources */,
+				8392117B1C8F8516002B802F /* ping_error@2x.png in Resources */,
 				B6869BAA13DD8DDE00F2D69B /* InfoPlist.strings in Resources */,
+				83E571D61C8E4ECB00891AFE /* ping_9.png in Resources */,
 				B6869BB013DD8DDE00F2D69B /* Credits.rtf in Resources */,
+				83E571D51C8E4ECB00891AFE /* ping_8.png in Resources */,
+				83E571D21C8E4ECB00891AFE /* ping_5.png in Resources */,
+				839211781C8F8516002B802F /* ping_3@2x.png in Resources */,
+				83E571D01C8E4ECB00891AFE /* ping_3.png in Resources */,
+				83E571D41C8E4ECB00891AFE /* ping_7.png in Resources */,
+				83E571D31C8E4ECB00891AFE /* ping_6.png in Resources */,
 				B6869BB613DD8DDE00F2D69B /* MainMenu.xib in Resources */,
-				B6869BBD13DDA3D900F2D69B /* iconok.png in Resources */,
-				B6869BBF13DDAEA600F2D69B /* iconko.png in Resources */,
+				83E571D71C8E4ECB00891AFE /* ping_error.png in Resources */,
+				839211731C8F8516002B802F /* ping_8@2x.png in Resources */,
+				83E571CF1C8E4ECB00891AFE /* ping_2.png in Resources */,
+				839211751C8F8516002B802F /* ping_6@2x.png in Resources */,
 				B6869BC113DDAEB500F2D69B /* iconslow.png in Resources */,
+				839211791C8F8516002B802F /* ping_2@2x.png in Resources */,
 				B688E44813ED7C7A00D58F00 /* world_icon.png in Resources */,
+				839211771C8F8516002B802F /* ping_4@2x.png in Resources */,
+				83E571CE1C8E4ECB00891AFE /* ping_1.png in Resources */,
+				83E571D11C8E4ECB00891AFE /* ping_4.png in Resources */,
+				839211741C8F8516002B802F /* ping_7@2x.png in Resources */,
 				B688E44B13ED874400D58F00 /* world_icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,11 +297,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -240,6 +321,9 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				ONLY_ACTIVE_ARCH = YES;
@@ -251,15 +335,26 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				SDKROOT = macosx;
@@ -269,10 +364,12 @@
 		B6869BBA13DD8DDE00F2D69B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iconping/iconping-Prefix.pch";
 				INFOPLIST_FILE = "iconping/iconping-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.antirez.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
@@ -282,10 +379,12 @@
 		B6869BBB13DD8DDE00F2D69B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iconping/iconping-Prefix.pch";
 				INFOPLIST_FILE = "iconping/iconping-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.antirez.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;

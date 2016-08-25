@@ -33,9 +33,7 @@ struct ICMPHeader {
 #define ICMP_TYPE_ECHO_REPLY 0
 #define ICMP_TYPE_ECHO_REQUEST 8
 
-#define CONN_STATE_KO 0
-#define CONN_STATE_SLOW 1
-#define CONN_STATE_OK 2
+#define CONN_STATE_KO -1
 
 /* This is the standard BSD checksum code, modified to use modern types. */
 static uint16_t in_cksum(const void *buffer, size_t bufferLen)
@@ -150,7 +148,7 @@ int64_t ustime(void) {
         return;
     }
     
-    NSLog(@"OK received an ICMP packet that matches!\n");
+    NSLog(@"OK received an ICMP packet that matches.\n");
     if (reply->sentTime > last_received_time) {
         last_rtt = (int)(ustime()-reply->sentTime)/1000;
         last_received_time = reply->sentTime;
@@ -168,7 +166,7 @@ int64_t ustime(void) {
                                 [self methodSignatureForSelector:@selector(timerHandler:)]];
     [invocation setTarget:self];
     [invocation setSelector:@selector(timerHandler:)];
-    [[NSRunLoop mainRunLoop] addTimer:[NSTimer timerWithTimeInterval:0.1 invocation:invocation repeats:YES] forMode:NSRunLoopCommonModes];
+    [[NSRunLoop mainRunLoop] addTimer:[NSTimer timerWithTimeInterval:0.05 invocation:invocation repeats:YES] forMode:NSRunLoopCommonModes];
 
     myMenu = [[NSMenu alloc] initWithTitle:@"Menu Title"];
     NSMenuItem *menuItem = [[NSMenuItem alloc] initWithTitle:@"Quit Icon Ping" action:@selector(exitAction) keyEquivalent:@"q"];
@@ -187,10 +185,18 @@ int64_t ustime(void) {
 
     myStatusItem = [[[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength] retain];
     
-    myStatusImageOK = [[NSImage alloc] initWithContentsOfFile: [bundle pathForResource:@"iconok" ofType:@"png"]];
-    myStatusImageSLOW = [[NSImage alloc] initWithContentsOfFile: [bundle pathForResource:@"iconslow" ofType:@"png"]];
-    myStatusImageKO = [[NSImage alloc] initWithContentsOfFile: [bundle pathForResource:@"iconko" ofType:@"png"]];
-    [myStatusItem setImage:myStatusImageKO];
+    ping1 = [NSImage imageNamed:@"ping_1"];
+    ping2 = [NSImage imageNamed:@"ping_2"];
+    ping3 = [NSImage imageNamed:@"ping_3"];
+    ping4 = [NSImage imageNamed:@"ping_4"];
+    ping5 = [NSImage imageNamed:@"ping_5"];
+    ping6 = [NSImage imageNamed:@"ping_6"];
+    ping7 = [NSImage imageNamed:@"ping_7"];
+    ping8 = [NSImage imageNamed:@"ping_8"];
+    ping9 = [NSImage imageNamed:@"ping_9"];
+    pingError = [NSImage imageNamed:@"ping_error"];
+
+    [myStatusItem setImage:pingError];
     [myStatusItem setMenu: myMenu];
     [self changeConnectionState: CONN_STATE_KO];
     
@@ -217,12 +223,11 @@ int64_t ustime(void) {
     
     /* Update the current state accordingly */
     elapsed = (ustime() - last_received_time)/1000; /* in milliseconds */
+    //NSLog(@"Ping took %d\n", (int)last_rtt);
     if (elapsed > 3000) {
         state = CONN_STATE_KO;
-    } else if (last_rtt < 300) {
-        state = CONN_STATE_OK;
     } else {
-        state = CONN_STATE_SLOW;
+        state = (int)((last_rtt + 10) / 100);
     }
     if (state != connection_state) {
         [self changeConnectionState: state];
@@ -231,15 +236,37 @@ int64_t ustime(void) {
 
 - (void) changeConnectionState: (int) state
 {
+    //NSLog(@"State change to %d\n", state);
     if (state == CONN_STATE_KO) {
-        [myStatusItem setImage:myStatusImageKO];
+        [myStatusItem setImage:pingError];
         [statusMenuItem setTitle:@"No Connection!"];
-    } else if (state == CONN_STATE_OK) {
-        [myStatusItem setImage:myStatusImageOK];
+    } else if (state <= 1) {
+        [myStatusItem setImage:ping1];
         [statusMenuItem setTitle:@"Connection OK"];
-    } else if (state == CONN_STATE_SLOW) {
-        [myStatusItem setImage:myStatusImageSLOW];
-        [statusMenuItem setTitle:@"Connection is slow"];
+    } else if (state == 2) {
+        [myStatusItem setImage:ping2];
+        [statusMenuItem setTitle:@"Connection OK"];
+    } else if (state == 3) {
+        [myStatusItem setImage:ping3];
+        [statusMenuItem setTitle:@"Connection OK"];
+    } else if (state == 4) {
+        [myStatusItem setImage:ping4];
+        [statusMenuItem setTitle:@"Connection OK"];
+    } else if (state == 5) {
+        [myStatusItem setImage:ping5];
+        [statusMenuItem setTitle:@"Connection OK"];
+    } else if (state == 6) {
+        [myStatusItem setImage:ping6];
+        [statusMenuItem setTitle:@"Connection OK"];
+    } else if (state == 7) {
+        [myStatusItem setImage:ping7];
+        [statusMenuItem setTitle:@"Connection OK"];
+    } else if (state == 8) {
+        [myStatusItem setImage:ping8];
+        [statusMenuItem setTitle:@"Connection OK"];
+    } else if (state == 9) {
+        [myStatusItem setImage:ping9];
+        [statusMenuItem setTitle:@"Connection OK"];
     }
     connection_state = state;
 }

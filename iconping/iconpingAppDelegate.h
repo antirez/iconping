@@ -13,7 +13,7 @@
     NSStatusItem *myStatusItem;
     NSImage *myStatusImageOK, *myStatusImageSLOW, *myStatusImageKO;
     NSMenu *myMenu;
-    NSMenuItem *statusMenuItem, *openAtStartupMenuItem;
+    NSMenuItem *statusMenuItem, *openAtStartupMenuItem, *quitMenuItem;
     uint16_t icmp_id;
     uint16_t icmp_seq;
     int64_t last_received_time;

@@ -11,7 +11,7 @@
 @interface iconpingAppDelegate : NSObject <NSApplicationDelegate> {
     NSWindow *window;
     NSStatusItem *myStatusItem;
-    NSImage *myStatusImageOK, *myStatusImageSLOW, *myStatusImageKO;
+    NSImage *ping1, *ping2, *ping3, *ping4, *ping5, *ping6, *ping7, *ping8, *ping9, *pingError;
     NSMenu *myMenu;
     NSMenuItem *statusMenuItem, *openAtStartupMenuItem;
     uint16_t icmp_id;
